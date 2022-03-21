@@ -19,8 +19,7 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  z-index: -2;
-  color: #000;
+    color: #000;
   /* выше установили ограничения для секции */
 }
 
@@ -35,7 +34,7 @@
   position: absolute;
   top: 30px;
   left: 64px;
-  z-index: 1;
+  z-index: 3;
 }
 
 .header__title {
@@ -45,7 +44,7 @@
   font-size: 102px;
   font-weight: bold;
   line-height: 96px;
-  z-index: 1;
+  z-index: 3;
 }
 
 .header__subtitle {
@@ -56,13 +55,14 @@
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
-  z-index: 1;
+  z-index: 3;
   margin: 0;
 }
 
 .header__link {
   text-decoration: none;
   color: #2f80ed;
+  z-index: 5;
 }
 
 .header__main-illustration {
@@ -71,7 +71,7 @@ height: 608px;
 position: absolute;
 right: 0;
 bottom: 0;
-z-index: 0;
+z-index: 2;
 }
 
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
@@ -82,7 +82,7 @@ z-index: 0;
   position: absolute;
   right: 0;
   top: 64px;
-  z-index: -1;
+  z-index: 1;
 }
 
 /* Таблица стилей для description */
@@ -322,24 +322,14 @@ font-weight: bold;
 margin: 0 0 20px;
 }
 
-.footer__column-link {
-  list-style: none;
-  padding: 0;
-  color: white;
-  text-decoration: none;
-  line-height: 30px;
-  font-size: 18px;
-  font-weight: normal;
-  margin: 0;
-}
-
-.footer__column-link:last-of-type {
-  margin: 0 0 16px;
-}
-
 .footer__column-links {
   list-style: none;
   padding: 0;
+  margin: 0;
+}
+
+.footer__column-link {
+  padding: 0;
   color: white;
   text-decoration: none;
   line-height: 30px;
@@ -347,7 +337,7 @@ margin: 0 0 20px;
   font-weight: normal;
   margin: 0;
 }
-.footer__column-links:last-of-type {
+.footer__column-link:last-of-type {
   margin: 0 0 16px;
 }
 .footer__social-icon {
