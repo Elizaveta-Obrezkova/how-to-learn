@@ -1,0 +1,9 @@
+.video {
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 0 0;
+  box-sizing: border-box;
+  max-height: 520px;
+}
