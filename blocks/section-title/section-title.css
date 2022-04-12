@@ -6,4 +6,5 @@
   font-weight: bold;
   text-align: center;
   width: 60%;
+  z-index: 3;
 }
